@@ -1,0 +1,42 @@
+sly=0
+huffle=0
+raven=0
+gry=0
+q1=print('Q1) Do you like Dawn or Dusk?\n1)Dawn\n2)Dusk')
+ans1=int(input('Enter Your Answer(1-2):'))
+if ans1==1:
+  gry=gry+1
+  raven=raven+1
+elif ans1==2:
+  huffle=huffle+1
+  sly=sly+1
+else:
+  print('Wrong Input')
+q2=print('Q2) When I’m dead, I want people to remember me as:\n1) The Good\n2) The Great\n3) The Wise\n4) The Bold')
+ans2=int(input('Enter Your Answer(1-4):'))
+if ans2==1:
+  huffle=huffle+2
+elif ans2==2:
+  sly=sly+2
+elif ans2==3:
+  raven=raven+2
+elif ans2==4:
+  gry=gry+2
+else:
+  print('Wrong Input')
+q3=print('Q3) Which kind of instrument most pleases your ear?\n1) The violin\n2) The trumpet\n3) The piano\n4) The drum')
+ans3=int(input('Enter Your Answer (1-4):'))
+if ans3==1:
+  sly=sly+4
+elif ans3==2:
+  huffle=huffle+4
+elif ans3==3:
+  raven=raven+4
+elif ans3==4:
+  gry=gry+4
+else:
+  print('Wrong Input')
+print('Gryffindor=',gry)
+print('hufflepuff=',huffle)
+print('Ravenclaw=',raven)
+print('Slytherin=',sly)

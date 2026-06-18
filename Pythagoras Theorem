@@ -1,0 +1,4 @@
+a=int (input("Enter Length of Short side:"))
+b=int (input("Enter Length of Another Short Side:"))
+c=(a*a+b*b)**0.5
+print('Hypoteneous:',c)

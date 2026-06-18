@@ -1,0 +1,4 @@
+mass=int(input("Enter Your Mass:"))
+height=int(input("Enter Your Height:"))
+bmi=(mass/height**2)
+print('Your body mass index (BMI) is:',bmi)

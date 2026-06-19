@@ -1,0 +1,50 @@
+import random
+computer=random.randint(1,5)
+print('1) Rock✊\n2)Paper ✋\n3)Scissors ✌️\n4)Lizard 🦎\n5)Spock 🖖')
+player=int(input('Select Number(1-5):'))
+print('You Choose:',player)
+print('CPU Choose:',computer)
+if (player>5 or player<1):
+    print('Invalid Number')
+elif (player==1 and computer==3):
+    print('Rock Breaks Scissors\nYou Win')
+elif (player==1 and computer==4):
+    print('Rock Smashes Lizard\nYou Win')
+elif (player==1 and computer==5):
+    print('Spock Vaporizes Rock\nYou Lose')
+elif (player==2 and computer==3):
+    print('Scissors Cut Paper\nYou Lose')
+elif (player==2 and computer==4):
+    print('Lizard Eats Paper\nYou Lose')
+elif (player==2 and computer==5):
+    print('Paper Disproves Spock\nYou Win')
+elif (player==3 and computer==4):
+    print('Scissors Beat Lizard\nYou Win')
+elif (player==3 and computer==5):
+    print('Spock Smashes Scissors\nYou Lose')
+elif (player==4 and computer==5):
+    print('Lizard Poisons Spock\nYou Win')
+elif (player==2 and computer==1):
+   print('Paper Covers Rock\nYou Win')
+elif (player==3 and computer==1):
+   print('Rock Breaks Scissors\nYou Lose')
+elif (player==4 and computer==1):
+   print('Rock Smashes Lizard\nYou Lose')
+elif (player==5 and computer==1):
+   print('Spock Vaporizes Rock\nYou Win')
+elif (player==3 and computer==2):
+   print('Scissors Cut Paper\nYou Win')
+elif (player==4 and computer==2):
+   print('Lizard Eats Paper\nYou Win')
+elif (player==5 and computer==2):
+    print('Paper Disproves Spock\nYou Lose')
+elif (player==4 and computer==3):
+    print('Scissors Beat Lizard\nYou Lose')
+elif (player==5 and computer==3):
+    print('Spock Smashes Scissors\nYou Win')
+elif (player==5 and computer==4):
+    print('Lizard Poisons Spock\nYou Lose')
+elif (player==1 and computer==2):
+    print('Paper Covers Rock\nYou Lose')
+else:
+    print('It\'s a Tie')
